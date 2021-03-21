@@ -47,6 +47,15 @@ bool wifi_connected = false;
 
 void wifi_setup() {
     WiFi.mode(WIFI_STA);
+    WiFiManager wm;
+
+    //reset settings - wipe credentials for testing
+    //wm.resetSettings();
+
+     // id/name(not shown), placeholder/prompt, default, length
+    WiFiManagerParameter custom_setting("server", "Sleep time", "30", 40 /**, "readonly"**/);
+    wm.addParameter(&custom_setting);
+
     //wm.setCustomHeadElement("<style>html{filter: invert(100%); -webkit-filter: invert(100%);}</style>");
 
     //WiFiManagerParameter custom_text("<p>This is just a text paragraph</p>");
