@@ -2,7 +2,7 @@
 
 /** user editable **/
 #define NAME "COLLAR"
-#define SOFTWARE_VERSION "1.0" // current software version
+#define SOFTWARE_VERSION "0.1.0" // current software version
 #define VOLT_CORRECTION -0.10  // correct the voltage level
 #define STAY_ON_TIME 5    // time to stay on before going to sleep if no message is received in seconds
 #define SLEEP_TIME 60     // how long to sleep in seconds
